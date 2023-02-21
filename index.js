@@ -23,7 +23,7 @@ let surucuYasi = 22;
 if (surucuYasi>18) {
   console.log('true');
 } else {
-  console.log('false');
+  console.log('false'); 
 }
 
 /*
