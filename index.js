@@ -19,8 +19,12 @@ Aşağıdakileri yapın:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
-
-
+let surucuYasi = 22;
+if (surucuYasi>18) {
+  console.log('true');
+} else {
+  console.log('false');
+}
 
 /*
 Görev 1b - Değerler (puanlamaya dahil değildir)
@@ -33,6 +37,12 @@ Aşağıdakileri yapınız:
 
    İPUCU: fonksiyon oluşturmaya gerek yok
 */
+let birinciDeger = 30;
+let ikinciDeger = 21;
+if (birinciDeger > ikinciDeger) {
+  birinciDeger = 55
+  console.log(birinciDeger);
+} 
 
 
 
@@ -48,8 +58,8 @@ Aşağıdakileri yapın:
 
    İPUCU: Number metoduna bakabilirsin
 */
-
-
+var x = '1999';
+console.log(parseInt(x))
 
 
 /*
@@ -61,9 +71,12 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamlayın:
    3. console.log(carpma(7,4)) ile yazdığınız fonsiyonu test edin. Console'da sonucu 28 olarak görmelisiniz.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function carpma(a,b){
+  return a * b;
+
+
 }
+console.log(carpma(7,4));
 
 
 
@@ -77,10 +90,13 @@ Aşağıdakileri yapın:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
-}
 
+function kopeginYasi(a){
+  return a * 7;
+  
+  /*buraya kodunu yazabilirsin*/
+} 
+console.log(kopeginYasi(8));
 
 
 /* Görev 3 */
@@ -97,9 +113,13 @@ Aşağıdakileri oyun isimli fonksiyonu kullanarak yapın.
 OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı yener | veya beraberlik olur.
 */
 
-function oyun(oyuncu, bilgisayar){
+function oyun(oyuncu, bilgisayar)
+
+
+
+  
   /*buraya kodunu yazabilirsin*/
-}
+
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
 /*
@@ -112,6 +132,8 @@ function oyun(oyuncu, bilgisayar){
 3. Math.random'ı kullanarak bilgisayarın seçimini oluşturun (Math.random 0-1 arasında bir değer verecek)
 4. Bu rastgele değeri "Taş", "Kağıt" veya "Makas"a dönüştüren bir koşul oluşturun
 5. Oluşan değeri geri dönün
+
+
 
 Şimdi kendi seçtiğiniz bir seçime karşı bilgisayarın rastgele oluşturduğu seçimi yukarıda yazdığınız oyun fonsiyonu ile oynayın ve sonucu console'a yazdırın.
 Örn: console.log(oyun("Makas",bilgisayarinSecimi()))
@@ -127,9 +149,11 @@ Aşağdaki milDonusturucu fonksiyonunu aşağıdakileri kullanarak tamamlayın:
 3. Mil değerini geri dönün
 */
 
-function milDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function milDonusturucu(km){
+ return km * 0.621371192;
 }
+console.log(milDonusturucu(5));
+
 
 
 
@@ -143,10 +167,10 @@ Aşağıdakileri feetDonusturucu fonsiyonunu kullanarak yapın:
 Google'da arama ipucu: "feet cm dönüştürme"
 */
 
-function feetDonusturucu(/*buraya kodunu yazabilirsin*/){
-  /*buraya kodunu yazabilirsin*/
+function feetDonusturucu(cm){
+  return cm * 0.032808399;
 }
-
+console.log(feetDonusturucu(200));
 
 
 /* Görev 5 : 5 küçük maymun yatakta zıplamış şarkısını çocuklar için hazırladığımızı varsayalım. https://www.youtube.com/watch?v=e4EJ34xnlxk */
@@ -162,9 +186,15 @@ Aşağıdakileri cocukSarkisi fonksiyonunda yapın:
 4. Bu döngüde, her seferinde cocukSarkisi fonsiyonu çalışsın ve console.log'a dönen metni yazdırsın.
 */
 
-function cocukSarkisi(/*buraya kodunu yazabilirsin*/){
-      /*buraya kodunu yazabilirsin*/
+function cocukSarkisi(x) {
+
+      for (let x = 5; x> 0; x--); {
+        console.log(x);
+      }
 }
+console.log(cocukSarkisi(x, " küçük maymun yatakta zıplamış, biri düşüp başını çarpmış, Anne doktoru aramış, Doktor çok kızmış: Bir daha yatakta zıplamak yok!"
+));
+
 
 
 /* Görev 6 : Not Hesaplayıcı */
@@ -182,8 +212,24 @@ Aşağdakileri notHesapla fonksiyonunda yapın.
  dönün
 */
 
-function notHesapla(/*buraya kodunu yazabilirsin*/){
+function notHesapla(a){
 /*buraya kodunu yazabilirsin*/
+}
+let a = 70;
+if (a >= 90 && a <= 100) {
+  console.log('A aldın');
+}
+else if (a >= 80 && a <= 89) {
+  console.log('B aldın');
+}
+else if (a >= 70 && a <= 79) {
+  console.log('C aldın');
+}
+else if (a >= 60 && a <= 69) {
+  console.log('D aldın');
+}
+else if (a <= 59) {
+  console.log('F aldın');
 }
 
 
@@ -200,11 +246,11 @@ Aşağıdakileri sesliHarfSayaci fonskiyonunda yapın.
 */
 
 
-function sesliHarfSayaci(/*buraya kodunu yazabilirsin*/) {
+function sesliHarfSayaci(str) {
   /*buraya kodunu yazabilirsin*/
+  var cemreguvenilir = str.match(/[aeiou]/gi);
+  return 
 }
-
-
 
 /* Lütfen bu satırın alt tarafını değiştirmeyin */
 function sa(){
